@@ -3,7 +3,7 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server Rails.application.secrets.deploy_ip_address, port: Rails.application.secrets.deploy_remote_port, user: "deploy", roles: %w{app db web}, primary: true
+server '172.96.207.139', port: '28510', user: "deploy", roles: %w{app db web}, primary: true
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 

@@ -30,7 +30,7 @@ set :yarn_env_variables, {}                               # default
 
 set :nvm_type, :user # or :system, depends on your nvm setup
 set :nvm_node, 'v8.9.0'
-set :nvm_map_bins, %w{node npm yarn}
+set :nvm_map_bins, %w{yarn}
 
 append :linked_files, "config/secrets.yml.key"
 append :linked_dirs, "node_modules"

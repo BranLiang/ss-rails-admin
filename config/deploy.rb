@@ -23,7 +23,7 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 
 append :linked_files, "config/secrets.yml.key"
-append :linked_dirs, %w{node_modules}
+append :linked_dirs, "node_modules"
 
 namespace :puma do
   desc 'Create Directories for Puma Pids and Socket'

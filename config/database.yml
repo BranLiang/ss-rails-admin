@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: ss-rails-admin_production
-  username: ss-rails-admin
+  username: <%= ENV['SS-RAILS-ADMIN_DATABASE_USERNAME'] %>
   password: <%= ENV['SS-RAILS-ADMIN_DATABASE_PASSWORD'] %>

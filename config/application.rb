@@ -14,6 +14,7 @@ module SsRailsAdmin
     config.generators do |g|
       g.javascripts false
       g.stylesheets false
+      g.template_engine :slim
     end
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

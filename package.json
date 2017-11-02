@@ -1,6 +1,10 @@
 {
   "name": "ss-rails-admin",
   "private": true,
+  "scripts": {
+    "lint": "standard --verbose | snazzy",
+    "fix": "standard --fix"
+  },
   "dependencies": {
     "@rails/webpacker": "^3.0.2",
     "apisauce": "^0.14.1",
@@ -21,5 +25,11 @@
     "snazzy": "^7.0.0",
     "standard": "^10.0.3",
     "webpack-dev-server": "^2.9.3"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "/app/assets"
+    ]
   }
 }

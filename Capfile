@@ -8,8 +8,8 @@ require "capistrano/rvm"
 require 'capistrano/nvm'
 require 'capistrano/yarn'
 require "capistrano/puma"
-install_plugin Capistrano::Puma
 require 'capistrano/scm/git'
+install_plugin Capistrano::Puma
 install_plugin Capistrano::SCM::Git
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined

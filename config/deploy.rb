@@ -33,7 +33,6 @@ set :nvm_node, 'v8.9.0'
 set :nvm_map_bins, %w{yarn}
 
 append :linked_files, "config/secrets.yml.key"
-append :linked_dirs, "node_modules"
 
 namespace :puma do
   desc 'Create Directories for Puma Pids and Socket'

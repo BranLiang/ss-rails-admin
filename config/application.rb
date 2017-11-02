@@ -10,6 +10,7 @@ module SsRailsAdmin
     config.generators do |g|
       g.javascripts false
       g.stylesheets false
+      g.helper false
       g.template_engine :slim
     end
   end

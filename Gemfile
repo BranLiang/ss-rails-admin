@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'mini_racer', platforms: :ruby
 gem 'pg', '~> 0.18'

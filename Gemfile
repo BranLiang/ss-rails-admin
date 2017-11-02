@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'high_voltage', '~> 3.0.0'
 gem 'jbuilder', '~> 2.5'
 gem 'mini_racer', platforms: :ruby
 gem 'pg', '~> 0.18'

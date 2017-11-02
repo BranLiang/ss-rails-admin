@@ -7,10 +7,11 @@ gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.4'
 gem 'react_on_rails'
 gem 'sass-rails', '~> 5.0'
+gem 'slim-rails', '~> 3.1.3'
 gem 'turbolinks', '~> 5'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'uglifier', '>= 1.3.0'
-gem 'webpacker'
+gem 'webpacker', '~> 3.0.2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

@@ -44,6 +44,7 @@ GEM
       sshkit (>= 1.6.1, != 1.7.0)
     arel (8.0.0)
     bindex (0.5.0)
+    bugsnag (5.4.1)
     builder (3.2.3)
     byebug (9.1.0)
     capistrano (3.10.0)
@@ -228,6 +229,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bugsnag
   byebug
   capistrano
   capistrano-bundler

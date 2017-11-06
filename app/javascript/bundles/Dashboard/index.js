@@ -1,6 +1,6 @@
 import dva from 'dva'
 import models from './models'
-import { browserHistory } from 'dva/router'
+import createHistory from 'history/createBrowserHistory'
 import { createLogger } from 'redux-logger'
 
 export default (props) => {
@@ -11,7 +11,7 @@ export default (props) => {
   }
 
   const app = dva({
-    history: browserHistory,
+    history: createHistory(),
     initialState: props,
     onAction: middlewares
   })

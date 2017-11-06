@@ -6,7 +6,7 @@ function RouterConfig ({ history }) {
   return (
     <Router history={history}>
       <Switch>
-        <Route path='/user' component={UserLayout} />
+        <Route path='/hello_world' component={UserLayout} />
         <Route path='/admin' component={BasicLayout} />
         <Redirect to='/' />
       </Switch>

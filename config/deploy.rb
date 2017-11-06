@@ -24,7 +24,7 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 
 set :yarn_target_path, -> { release_path } # default not set
-set :yarn_flags, '--production --silent --no-progress'    # default
+set :yarn_flags, '--silent --no-progress'    # default
 set :yarn_roles, :all                                     # default
 set :yarn_env_variables, {}                               # default
 

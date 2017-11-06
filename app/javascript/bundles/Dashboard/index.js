@@ -1,7 +1,9 @@
 import dva from 'dva'
+import React from 'react'
 import models from './models'
 import createHistory from 'history/createBrowserHistory'
 import { createLogger } from 'redux-logger'
+import RouterConfig from './router'
 
 export default (props) => {
   // 1. Initialize
@@ -12,7 +14,6 @@ export default (props) => {
 
   const app = dva({
     history: createHistory(),
-    initialState: props,
     onAction: middlewares
   })
 
@@ -25,7 +26,7 @@ export default (props) => {
   })
 
   // 4. Router
-  app.router(require('./router'))
+  app.router(RouterConfig)
 
   const App = app.start()
   return <App />

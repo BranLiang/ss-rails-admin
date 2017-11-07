@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get 'hello_world', to: 'hello_world#index'
-  get 'hello_world/*path', to: 'hello_world#index'
+  # Dashboard app router config
+  get 'dashboard', to: 'dashboard#index'
+  get 'dashboard/*path', to: 'dashboard#index'
 end

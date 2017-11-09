@@ -1,0 +1,8 @@
+doctype html
+html
+  head
+    title = yield(:page_title)
+    = csrf_meta_tags
+    = javascript_pack_tag 'bundle'
+  body
+    = yield
